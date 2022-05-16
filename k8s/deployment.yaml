@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nest-app
+  name: product-service
 spec:
   selector:
     matchLabels:
-      app: nest-app
+      app: product-service
   replicas: 2
   template:
     metadata:
       labels:
-        app: nest-app
+        app: product-service
     spec:
       containers:
-        - name: nest-app
+        - name: product-service
           image: gcr.io/golden-sandbox-343808/github.com/arosh-segar/ctse-a2-nest
           ports:
             - containerPort: 8080
