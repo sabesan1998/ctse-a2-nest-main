@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: gcr.io/golden-sandbox-343808/github.com/arosh-segar/ctse-a2-nest
+          image: gcr.io/golden-sandbox-343808/github.com/sabesan1998/ctse-a2-nest-main
           ports:
             - containerPort: 8080
